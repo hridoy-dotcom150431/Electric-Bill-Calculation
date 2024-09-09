@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%; /* Adjusted for responsiveness */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+/* Input field styles */
+.input {
+    flex: 1;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.input:required {
+    border-color: #dc3545;
+}
+
+.input:invalid {
+    background-color: #ffcccc;
+}
+
+/* Button styles */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-btn,
+
+.submit-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover,
+
+.submit-btn:hover {
+    background-color: #51b300;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+.remove-btn {
+    padding: 8px 16px; /* Adjust the padding to make the button smaller */
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #51b300;
+}

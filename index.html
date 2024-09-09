@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity bill account</title>
+    
+</head>
+<body>
+    <h1>Electricity bill account</h1>
+    <div class="container">
+
+        <div id="final_result">
+            <h2 id="result-day-unit"></h2>
+            <h2 id="result-day"></h2>
+            <h2 id="result-month-unit"></h2>
+            <h2 id="result-month"></h2>
+        </div>
+
+
+        <div class="btn-container">
+            <button class="add-btn" onclick="addHero()">Add</button>
+            <button class="reset-btn" onclick="resetFields()" style="padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+        </div>
+        <div class="hero_mother">
+            <div class="hero" id="hero_1">
+                <input  type="number" class="input" required placeholder="Enter watt">
+                <input  type="number" class="input" required placeholder="Enter hour">
+                <button class="remove-btn" onclick="removeHero(1)">Delete</button>
+            </div>
+        </div>
+        
+        <button class="submit-btn" onclick="calculateTotal()">Submit</button>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
